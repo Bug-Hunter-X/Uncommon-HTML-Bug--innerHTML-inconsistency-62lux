@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Correct approach using insertAdjacentHTML
+    document.getElementById("myDiv").insertAdjacentHTML('beforeend', '<p>Another paragraph</p>');
+    document.getElementById("myDiv").insertAdjacentHTML('beforeend', '<p>Yet another paragraph</p>');
+  </script>
+</body>
+</html>
